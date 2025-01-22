@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Warteschlangenverwaltung<Kunde> kundenVerwaltung = new Warteschlangenverwaltung<>();
+        Warteschlangenverwaltung<Knoten> kundenVerwaltung = new Warteschlangenverwaltung<>();
         
         System.out.println("Willkommen zur Warteschlangenverwaltung!");
         boolean running = true;
@@ -33,13 +33,13 @@ public class Main {
                     String nameZumHinzufuegen = scanner.nextLine();
                     System.out.print("Geben Sie den Namen des Elements ein: ");
                     String kundenName = scanner.nextLine();
-                    kundenVerwaltung.fuegeHinzu(nameZumHinzufuegen, new Kunde(kundenName));
+                    kundenVerwaltung.fuegeHinzu(nameZumHinzufuegen, new Knoten(kundenName));
                     System.out.println("Element '" + kundenName + "' hinzugefügt.");
                     break;
                 case 3:
                     System.out.print("Geben Sie den Namen der Warteschlange ein: ");
                     String nameZumAnzeigen = scanner.nextLine();
-                    Kunde ersterKunde = kundenVerwaltung.gibErsten(nameZumAnzeigen);
+                    Knoten ersterKunde = kundenVerwaltung.gibErsten(nameZumAnzeigen);
                     if (ersterKunde != null) {
                         System.out.println("Erstes Element: " + ersterKunde.getName());
                     } else {
