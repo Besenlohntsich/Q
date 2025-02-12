@@ -1,12 +1,9 @@
-/**
- * Die generische Klasse Warteschlange repräsentiert eine Warteschlange von Elementen vom Typ T.
- * @param <T> Der Typ der Elemente in der Warteschlange
- */
+
 public class Warteschlange<T> {
     private Queue<T> queue;
 
     /**
-     * Ein Objekt der Klasse Warteschlange wird erzeugt.
+     * Eine Warteschlange wird erzeugt.
      */
     public Warteschlange() {
         queue = new Queue<>();
