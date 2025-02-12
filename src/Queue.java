@@ -77,3 +77,4 @@ public class Queue<T> {
         }
     }
 }
+// vorstellen attribute methoden die ich habe und grundsetztliche funktion

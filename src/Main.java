@@ -39,9 +39,9 @@ public class Main {
                 case 3:
                     System.out.print("Geben Sie den Namen der Warteschlange ein: ");
                     String nameZumAnzeigen = scanner.nextLine();
-                    Knoten ersterKunde = Elementverwaltung.gibErsten(nameZumAnzeigen);
-                    if (ersterKunde != null) {
-                        System.out.println("Erstes Element: " + ersterKunde.getName());
+                    Knoten erstesElement = Elementverwaltung.gibErsten(nameZumAnzeigen);
+                    if (erstesElement != null) {
+                        System.out.println("Erstes Element: " + erstesElement.getName());
                     } else {
                         System.out.println("Die Warteschlange ist leer oder existiert nicht.");
                     }
