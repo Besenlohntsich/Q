@@ -3,7 +3,6 @@ import java.util.Map;
 
 /**
  * Die Klasse Warteschlangenverwaltung verwaltet mehrere Warteschlangen verschiedener Typen.
- * @param <T> Der Typ der Elemente in den verwalteten Warteschlangen
  */
 public class Warteschlangenverwaltung<T> {
     private Map<String, Warteschlange<T>> warteschlangen;
