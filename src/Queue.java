@@ -1,7 +1,4 @@
-/**
- * Die generische Klasse Queue repräsentiert eine Warteschlange von Elementen vom Typ T.
- * @param <T> Der Typ der Elemente in der Warteschlange
- */
+
 public class Queue<T> {
     private Knoten erster;
 

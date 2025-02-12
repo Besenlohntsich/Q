@@ -32,7 +32,7 @@ public class Knoten {
  //hallo
     /**
      * Die Anfrage gibt den Nachfolger des aktuellen Elements wieder.
-     * @return Kunde nachfolger
+     * @return Element nachfolger
      */
     public Knoten getNachfolger() {
         return this.nachfolger;
@@ -40,14 +40,14 @@ public class Knoten {
 
     /**
      * Setze Methode für den Namen auf den Wert des Parameters pName.
-     * @param pName Der neue Name des Kunden
+     * @param pName Der neue Name des Elements
      */
     public void setName(String pName) {
         this.name = pName;
     }
 
     /**
-     * Die Anfrage gibt den Namen des Kunden als Text wieder.
+     * Die Anfrage gibt den Namen des Elements als Text wieder.
      * @return String name
      */
     public String getName() {
